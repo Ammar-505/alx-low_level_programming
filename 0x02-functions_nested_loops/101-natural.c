@@ -1,36 +1,23 @@
 #include <stdio.h>
-void print_numbers(void);
+
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * main - Prints the sum of all multiples of 3 or 5 up to 102
+ * Return: Always (Success)
  */
 int main(void)
 {
-	print_numbers();
-	return (0);
-}
+	int i, z = 0;
 
-/**
- * print_numbers - prints the sum of multiples of 3 and 5 less than 1024
- *
- * Return: the sum of multiples
- */
-void print_numbers(void)
-{
-	int i;
-	int sum;
-
-	for (i = 0; i < 1024; i++)
+	while (i < 1024)
 	{
-		if (i % 3 == 0)
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			sum += i;
+			z += i;
 		}
-		else if (i % 5 == 0)
-		{
-			sum += i;
-		}
+
+		i++;
 	}
-	printf("%d\n", sum);
+
+	printf("%d\n", z);
+	return (0);
 }
