@@ -26,7 +26,7 @@ void jack_bauer(void)
 
 					if (hr1 == 2 && hr2 == 3  && min1 == 5 && min2 == 9)
 						return;
-		  	         }
+				}
 			}
 		}
 	}
